@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tab_chat"
+        android:icon="@drawable/comment"
+        android:title="Chat"/>
+
+    <item
+        android:id="@+id/tab_folder"
+        android:icon="@drawable/folder"
+        android:title="Folder"/>
+
+    <item
+        android:id="@+id/tab_setting"
+        android:icon="@drawable/settings"
+        android:title="Setting"/>
+
+
+</menu>
