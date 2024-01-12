@@ -1,19 +1,30 @@
 package com.example.memo
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import androidx.fragment.app.Fragment
 import com.example.memo.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity(), FolderFragmentListener {
 
     private lateinit var binding: ActivityMainBinding
+
+    private lateinit var modeSwitch: SwitchCompat
+    private var nightMode:Boolean=false
+    private var editor:SharedPreferences.Editor?=null
+    private var sharedPreferences:SharedPreferences?=null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+//        modeSwitch=findViewById(R.id.mode_switch)
 
         replaceFragment(ChatFragment())
 

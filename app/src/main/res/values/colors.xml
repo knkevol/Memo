@@ -10,9 +10,9 @@
     <color name="transblue">#5B2376B8</color>
     <color name="transparent">#00000000</color>
     <color name="lightgray">#5B9A9A9A</color>
+    <color name="gray">#5B505050</color>
     <color name="colorPrimary">#9EC2FF</color>
     <color name="colorPrimary2">#5B519CD8</color>
-
     <color name="colorPrimaryDark">#3981EC</color>
     <color name="dd">#171C26</color>
 

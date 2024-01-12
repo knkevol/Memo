@@ -1,68 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".SettingFragment"
     android:orientation="vertical"
-    android:gravity="center"
-    android:background="@color/white">
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_margin="20dp"
         android:text="Settings"
         android:textSize="50sp"
-        android:fontFamily="@font/gilroy_bold"
-        />
+        android:fontFamily="@font/gilroy_bold"/>
 
-    <CheckBox
-        android:id="@+id/system"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableRight="@drawable/checkbox"
-        android:fontFamily="@font/gilroy_light"
-        android:text="System"
-        android:focusedByDefault="true"
-        android:layout_marginTop="50dp"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <CheckBox
-        android:id="@+id/light"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableRight="@drawable/checkbox"
-        android:fontFamily="@font/gilroy_light"
-        android:text="Light Mode"
-        android:textSize="20sp" />
+        <TextView
+            android:id="@+id/system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="System Mode"
+            android:textSize="20sp"
+            android:layout_marginStart="100sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/systemswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-    <CheckBox
-        android:id="@+id/dark"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:button="@null"
-        android:drawableRight="@drawable/checkbox"
-        android:fontFamily="@font/gilroy_light"
-        android:text="Dark Mode"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CLICK"
-        android:layout_margin="30dp"
-        android:textColor="@color/deepBlue"
-        android:textSize="22sp"
-        android:background="@color/transparent"
-        android:fontFamily="@font/gilroy_bold"
-        android:drawableBottom="@drawable/minus" />
+        <TextView
+            android:id="@+id/dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="Dark Mode"
+            android:textSize="20sp"
+            android:layout_marginStart="100sp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/darkswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_margin="20sp">
+    </View>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-
-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_lock_24"/>
+        <TextView
+            android:id="@+id/lock"
+            android:layout_marginStart="100sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="Lock"
+            android:textSize="20sp"/>
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/lockswitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 </LinearLayout>
