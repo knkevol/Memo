@@ -8,16 +8,18 @@
     android:gravity="center">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:text="Settings"
+        android:textColor="@color/colorPrimary"
         android:textSize="50sp"
         android:fontFamily="@font/gilroy_bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
 
         <TextView
             android:id="@+id/system"
@@ -26,18 +28,19 @@
             android:fontFamily="@font/manrope_regular"
             android:text="System Mode"
             android:textSize="20sp"
-            android:layout_marginStart="100sp"
             android:textAlignment="center"
             android:gravity="center"/>
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/systemswitch"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp">
 
         <TextView
             android:id="@+id/dark"
@@ -46,13 +49,13 @@
             android:fontFamily="@font/manrope_regular"
             android:text="Dark Mode"
             android:textSize="20sp"
-            android:layout_marginStart="100sp"
             android:textAlignment="center"
             android:gravity="center"/>
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/darkswitch"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"/>
     </LinearLayout>
 
     <View
@@ -64,15 +67,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginStart="20dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_lock_24"/>
         <TextView
             android:id="@+id/lock"
-            android:layout_marginStart="100sp"
+            android:layout_marginStart="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/manrope_regular"
@@ -81,6 +85,34 @@
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/lockswitch"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"/>
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_margin="20sp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="20dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_error_24"/>
+        <TextView
+            android:id="@+id/guide"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/manrope_regular"
+            android:text="Guide"
+            android:textSize="20sp"/>
     </LinearLayout>
 </LinearLayout>
