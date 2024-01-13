@@ -10,7 +10,7 @@
     </style>
     <style name="Theme.Memo" parent="Base.Theme.Memo" />
 
-    <style name="Memo2" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Memo2" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="fab_size">mini</item>
         <item name="fab_shadowColor">@color/transparent</item>
         <item name="elevation">4dp</item>

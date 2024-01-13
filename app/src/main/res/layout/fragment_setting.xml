@@ -10,16 +10,23 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="25dp"
         android:text="Settings"
         android:textColor="@color/colorPrimary"
-        android:textSize="50sp"
+        android:textSize="55sp"
         android:fontFamily="@font/gilroy_bold"/>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="20sp">
+    </View>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp">
+        android:layout_margin="20dp">
 
         <TextView
             android:id="@+id/system"
@@ -31,16 +38,23 @@
             android:textAlignment="center"
             android:gravity="center"/>
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/systemswitch"
+            android:id="@+id/systemSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"/>
     </LinearLayout>
 
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="20sp">
+    </View>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp">
+        android:layout_margin="20dp">
 
         <TextView
             android:id="@+id/dark"
@@ -52,7 +66,7 @@
             android:textAlignment="center"
             android:gravity="center"/>
         <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/darkswitch"
+            android:id="@+id/darkSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"/>
@@ -61,7 +75,7 @@
     <View
         android:background="@color/gray"
         android:layout_width="match_parent"
-        android:layout_height="5px"
+        android:layout_height="5dp"
         android:layout_margin="20sp">
     </View>
 
@@ -69,7 +83,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:layout_marginStart="20dp">
+        android:layout_margin="20dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +106,7 @@
     <View
         android:background="@color/gray"
         android:layout_width="match_parent"
-        android:layout_height="5px"
+        android:layout_height="5dp"
         android:layout_margin="20sp">
     </View>
 
@@ -100,8 +114,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:layout_marginTop="3dp"
-        android:layout_marginStart="20dp">
+        android:layout_margin="20dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -114,6 +127,12 @@
             android:fontFamily="@font/manrope_regular"
             android:text="Guide"
             android:textSize="20sp"/>
-
     </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_margin="20sp">
+    </View>
 </LinearLayout>
