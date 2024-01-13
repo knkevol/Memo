@@ -5,6 +5,8 @@
         <item name="colorControlActivated">@color/bblue</item>
         <item name="colorControlNormal">@color/lightgray</item>
 
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.Memo" parent="Base.Theme.Memo" />
 

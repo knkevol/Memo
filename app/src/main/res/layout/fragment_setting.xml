@@ -114,5 +114,6 @@
             android:fontFamily="@font/manrope_regular"
             android:text="Guide"
             android:textSize="20sp"/>
+
     </LinearLayout>
 </LinearLayout>
